@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5107C083207EF0F200662F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C082207EF0F200662F75 /* AppDelegate.swift */; };
+		5107C085207EF0F200662F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C084207EF0F200662F75 /* ViewController.swift */; };
+		5107C088207EF0F200662F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5107C086207EF0F200662F75 /* Main.storyboard */; };
+		5107C08B207EF0F200662F75 /* Picojot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5107C089207EF0F200662F75 /* Picojot.xcdatamodeld */; };
+		5107C08D207EF0F300662F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5107C08C207EF0F300662F75 /* Assets.xcassets */; };
+		5107C090207EF0F300662F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5107C08E207EF0F300662F75 /* LaunchScreen.storyboard */; };
+		5107C09B207EF0F300662F75 /* PicojotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C09A207EF0F300662F75 /* PicojotTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5107C097207EF0F300662F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5107C077207EF0F200662F75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5107C07E207EF0F200662F75;
+			remoteInfo = Picojot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5107C07F207EF0F200662F75 /* Picojot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picojot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5107C082207EF0F200662F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5107C084207EF0F200662F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5107C087207EF0F200662F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5107C08A207EF0F200662F75 /* Picojot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Picojot.xcdatamodel; sourceTree = "<group>"; };
+		5107C08C207EF0F300662F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5107C08F207EF0F300662F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5107C091207EF0F300662F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5107C096207EF0F300662F75 /* PicojotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicojotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5107C09A207EF0F300662F75 /* PicojotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicojotTests.swift; sourceTree = "<group>"; };
+		5107C09C207EF0F300662F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5107C07C207EF0F200662F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5107C093207EF0F300662F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5107C076207EF0F200662F75 = {
+			isa = PBXGroup;
+			children = (
+				5107C081207EF0F200662F75 /* Picojot */,
+				5107C099207EF0F300662F75 /* PicojotTests */,
+				5107C080207EF0F200662F75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5107C080207EF0F200662F75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5107C07F207EF0F200662F75 /* Picojot.app */,
+				5107C096207EF0F300662F75 /* PicojotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5107C081207EF0F200662F75 /* Picojot */ = {
+			isa = PBXGroup;
+			children = (
+				5107C082207EF0F200662F75 /* AppDelegate.swift */,
+				5107C084207EF0F200662F75 /* ViewController.swift */,
+				5107C086207EF0F200662F75 /* Main.storyboard */,
+				5107C08C207EF0F300662F75 /* Assets.xcassets */,
+				5107C08E207EF0F300662F75 /* LaunchScreen.storyboard */,
+				5107C091207EF0F300662F75 /* Info.plist */,
+				5107C089207EF0F200662F75 /* Picojot.xcdatamodeld */,
+			);
+			path = Picojot;
+			sourceTree = "<group>";
+		};
+		5107C099207EF0F300662F75 /* PicojotTests */ = {
+			isa = PBXGroup;
+			children = (
+				5107C09A207EF0F300662F75 /* PicojotTests.swift */,
+				5107C09C207EF0F300662F75 /* Info.plist */,
+			);
+			path = PicojotTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5107C07E207EF0F200662F75 /* Picojot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5107C09F207EF0F300662F75 /* Build configuration list for PBXNativeTarget "Picojot" */;
+			buildPhases = (
+				5107C07B207EF0F200662F75 /* Sources */,
+				5107C07C207EF0F200662F75 /* Frameworks */,
+				5107C07D207EF0F200662F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Picojot;
+			productName = Picojot;
+			productReference = 5107C07F207EF0F200662F75 /* Picojot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5107C095207EF0F300662F75 /* PicojotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5107C0A2207EF0F300662F75 /* Build configuration list for PBXNativeTarget "PicojotTests" */;
+			buildPhases = (
+				5107C092207EF0F300662F75 /* Sources */,
+				5107C093207EF0F300662F75 /* Frameworks */,
+				5107C094207EF0F300662F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5107C098207EF0F300662F75 /* PBXTargetDependency */,
+			);
+			name = PicojotTests;
+			productName = PicojotTests;
+			productReference = 5107C096207EF0F300662F75 /* PicojotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5107C077207EF0F200662F75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Jishenaz;
+				TargetAttributes = {
+					5107C07E207EF0F200662F75 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5107C095207EF0F300662F75 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5107C07E207EF0F200662F75;
+					};
+				};
+			};
+			buildConfigurationList = 5107C07A207EF0F200662F75 /* Build configuration list for PBXProject "Picojot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5107C076207EF0F200662F75;
+			productRefGroup = 5107C080207EF0F200662F75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5107C07E207EF0F200662F75 /* Picojot */,
+				5107C095207EF0F300662F75 /* PicojotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5107C07D207EF0F200662F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5107C090207EF0F300662F75 /* LaunchScreen.storyboard in Resources */,
+				5107C08D207EF0F300662F75 /* Assets.xcassets in Resources */,
+				5107C088207EF0F200662F75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5107C094207EF0F300662F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5107C07B207EF0F200662F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5107C08B207EF0F200662F75 /* Picojot.xcdatamodeld in Sources */,
+				5107C085207EF0F200662F75 /* ViewController.swift in Sources */,
+				5107C083207EF0F200662F75 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5107C092207EF0F300662F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5107C09B207EF0F300662F75 /* PicojotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5107C098207EF0F300662F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5107C07E207EF0F200662F75 /* Picojot */;
+			targetProxy = 5107C097207EF0F300662F75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5107C086207EF0F200662F75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5107C087207EF0F200662F75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5107C08E207EF0F300662F75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5107C08F207EF0F300662F75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5107C09D207EF0F300662F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5107C09E207EF0F300662F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5107C0A0207EF0F300662F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43HLE74Q59;
+				INFOPLIST_FILE = Picojot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jishenaz.Picojot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5107C0A1207EF0F300662F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43HLE74Q59;
+				INFOPLIST_FILE = Picojot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jishenaz.Picojot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5107C0A3207EF0F300662F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43HLE74Q59;
+				INFOPLIST_FILE = PicojotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jishenaz.PicojotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picojot.app/Picojot";
+			};
+			name = Debug;
+		};
+		5107C0A4207EF0F300662F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 43HLE74Q59;
+				INFOPLIST_FILE = PicojotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jishenaz.PicojotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picojot.app/Picojot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5107C07A207EF0F200662F75 /* Build configuration list for PBXProject "Picojot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5107C09D207EF0F300662F75 /* Debug */,
+				5107C09E207EF0F300662F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5107C09F207EF0F300662F75 /* Build configuration list for PBXNativeTarget "Picojot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5107C0A0207EF0F300662F75 /* Debug */,
+				5107C0A1207EF0F300662F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5107C0A2207EF0F300662F75 /* Build configuration list for PBXNativeTarget "PicojotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5107C0A3207EF0F300662F75 /* Debug */,
+				5107C0A4207EF0F300662F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5107C089207EF0F200662F75 /* Picojot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5107C08A207EF0F200662F75 /* Picojot.xcdatamodel */,
+			);
+			currentVersion = 5107C08A207EF0F200662F75 /* Picojot.xcdatamodel */;
+			path = Picojot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5107C077207EF0F200662F75 /* Project object */;
+}
