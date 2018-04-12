@@ -14,6 +14,7 @@
 		5107C08D207EF0F300662F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5107C08C207EF0F300662F75 /* Assets.xcassets */; };
 		5107C090207EF0F300662F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5107C08E207EF0F300662F75 /* LaunchScreen.storyboard */; };
 		5107C09B207EF0F300662F75 /* PicojotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C09A207EF0F300662F75 /* PicojotTests.swift */; };
+		5107C0AA208007F300662F75 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C0A9208007F300662F75 /* CoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5107C096207EF0F300662F75 /* PicojotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicojotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5107C09A207EF0F300662F75 /* PicojotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicojotTests.swift; sourceTree = "<group>"; };
 		5107C09C207EF0F300662F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5107C0A9208007F300662F75 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,11 @@
 		5107C081207EF0F200662F75 /* Picojot */ = {
 			isa = PBXGroup;
 			children = (
+				5107C0A8208007C900662F75 /* Services */,
+				5107C0A7208007C400662F75 /* View */,
+				5107C0A6208007BE00662F75 /* Model */,
+				5107C0A5208007B500662F75 /* Controller */,
 				5107C082207EF0F200662F75 /* AppDelegate.swift */,
-				5107C084207EF0F200662F75 /* ViewController.swift */,
 				5107C086207EF0F200662F75 /* Main.storyboard */,
 				5107C08C207EF0F300662F75 /* Assets.xcassets */,
 				5107C08E207EF0F300662F75 /* LaunchScreen.storyboard */,
@@ -97,6 +102,36 @@
 				5107C09C207EF0F300662F75 /* Info.plist */,
 			);
 			path = PicojotTests;
+			sourceTree = "<group>";
+		};
+		5107C0A5208007B500662F75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5107C084207EF0F200662F75 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5107C0A6208007BE00662F75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5107C0A7208007C400662F75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5107C0A8208007C900662F75 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5107C0A9208007F300662F75 /* CoreDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5107C0AA208007F300662F75 /* CoreDataService.swift in Sources */,
 				5107C08B207EF0F200662F75 /* Picojot.xcdatamodeld in Sources */,
 				5107C085207EF0F200662F75 /* ViewController.swift in Sources */,
 				5107C083207EF0F200662F75 /* AppDelegate.swift in Sources */,
