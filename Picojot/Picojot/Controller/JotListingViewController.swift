@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  JotListingViewController.swift
 //  Picojot
 //
 //  Created by Jibran Syed on 4/11/18.
@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CloudKit
 
-class ViewController: UIViewController {
+class JotListingViewController: UIViewController 
+{
+    @IBOutlet weak var jotsTable: UITableView!
     
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad() 
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -20,12 +24,19 @@ class ViewController: UIViewController {
     }
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
+    
+    @IBAction func onAddBtnPressed(_ sender: Any) 
+    {
+        print("Add")
         
     }
+    
+    
+    @IBAction func onTagsBtnPressed(_ sender: Any) 
+    {
+        print("Tags")
+    }
+    
     
     
 }
