@@ -17,6 +17,7 @@
 		5107C0AA208007F300662F75 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5107C0A9208007F300662F75 /* CoreDataService.swift */; };
 		5107C1AC208E99C700662F75 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5107C1AB208E99C700662F75 /* CloudKit.framework */; };
 		511A6CDD208F467600EDED43 /* JotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A6CDC208F467600EDED43 /* JotCell.swift */; };
+		511A6CDF208F4F6100EDED43 /* CloudKitSchemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A6CDE208F4F6100EDED43 /* CloudKitSchemas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		5107C1A9208E99BF00662F75 /* Picojot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Picojot.entitlements; sourceTree = "<group>"; };
 		5107C1AB208E99C700662F75 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		511A6CDC208F467600EDED43 /* JotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotCell.swift; sourceTree = "<group>"; };
+		511A6CDE208F4F6100EDED43 /* CloudKitSchemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSchemas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		5107C0A6208007BE00662F75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				511A6CDE208F4F6100EDED43 /* CloudKitSchemas.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				5107C085207EF0F200662F75 /* JotListingViewController.swift in Sources */,
 				5107C083207EF0F200662F75 /* AppDelegate.swift in Sources */,
 				511A6CDD208F467600EDED43 /* JotCell.swift in Sources */,
+				511A6CDF208F4F6100EDED43 /* CloudKitSchemas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
