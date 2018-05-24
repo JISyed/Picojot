@@ -49,4 +49,12 @@ class CloudKitService
         }
     }
     
+    
+    static func setupSubscription()
+    {
+        let predicate = NSPredicate(value: true)
+        let subscription = CKSubscription(recordType: JotSchema.RecordName, predicate: predicate, options: CKSubscriptionOptions.firesOnRecordCreation)
+        let notifInfo = CKNotificationInfo()
+    }
+    
 }

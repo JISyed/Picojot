@@ -45,57 +45,60 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-4a-DZn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-4a-DZn">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JotCell" id="zuQ-Rr-C5e" customClass="JotCell" customModule="Picojot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JotCell" rowHeight="50" id="zuQ-Rr-C5e" customClass="JotCell" customModule="Picojot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zuQ-Rr-C5e" id="aeh-bc-lpG">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odn-er-La0" userLabel="JotTagColorView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="49.5"/>
                                                     <color key="backgroundColor" red="0.306769299" green="0.76807159940000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Odn-er-La0" secondAttribute="height" multiplier="1:1" id="7zS-PH-50G"/>
+                                                        <constraint firstAttribute="width" secondItem="Odn-er-La0" secondAttribute="height" multiplier="1:2" id="7zS-PH-50G"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jot Body Text" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csx-TG-oJT">
-                                                    <rect key="frame" x="52" y="24" width="77.5" height="14.5"/>
+                                                    <rect key="frame" x="33" y="30" width="272" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jot Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="lw1-EQ-rxl">
-                                                    <rect key="frame" x="52" y="4" width="61" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Tag Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-pw-tTo">
-                                                    <rect key="frame" x="241.5" y="7" width="63.5" height="15"/>
-                                                    <color key="backgroundColor" red="0.179889305" green="0.74153386430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQ8-3N-bw9">
+                                                    <rect key="frame" x="33" y="6" width="279" height="19.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Jot Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="lw1-EQ-rxl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="215.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Tag Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-pw-tTo">
+                                                            <rect key="frame" x="215.5" y="0.0" width="63.5" height="19.5"/>
+                                                            <color key="backgroundColor" red="0.179889305" green="0.74153386430000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="Odn-er-La0" secondAttribute="bottom" id="3HC-xN-ypB"/>
+                                                <constraint firstItem="csx-TG-oJT" firstAttribute="top" secondItem="XQ8-3N-bw9" secondAttribute="bottom" constant="4" id="9Yw-3S-vpX"/>
                                                 <constraint firstItem="Odn-er-La0" firstAttribute="leading" secondItem="aeh-bc-lpG" secondAttribute="leading" id="BEY-WA-NZM"/>
-                                                <constraint firstItem="WrZ-pw-tTo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lw1-EQ-rxl" secondAttribute="trailing" constant="8" symbolic="YES" id="Bux-NV-7t0"/>
-                                                <constraint firstItem="lw1-EQ-rxl" firstAttribute="leading" secondItem="Odn-er-La0" secondAttribute="trailing" constant="8" id="IBq-yT-9Gm"/>
-                                                <constraint firstAttribute="trailing" secondItem="WrZ-pw-tTo" secondAttribute="trailing" constant="15" id="Mn7-Wr-5ZO"/>
-                                                <constraint firstItem="WrZ-pw-tTo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lw1-EQ-rxl" secondAttribute="trailing" constant="8" symbolic="YES" id="VSw-kQ-qEs"/>
-                                                <constraint firstItem="WrZ-pw-tTo" firstAttribute="centerY" secondItem="lw1-EQ-rxl" secondAttribute="centerY" id="VcI-C4-r61"/>
-                                                <constraint firstItem="csx-TG-oJT" firstAttribute="top" secondItem="lw1-EQ-rxl" secondAttribute="bottom" id="cyK-gF-xy0"/>
-                                                <constraint firstItem="lw1-EQ-rxl" firstAttribute="top" secondItem="aeh-bc-lpG" secondAttribute="top" constant="4" id="czJ-as-FO3"/>
+                                                <constraint firstAttribute="trailing" secondItem="XQ8-3N-bw9" secondAttribute="trailing" constant="8" id="SNN-t0-mm4"/>
+                                                <constraint firstItem="XQ8-3N-bw9" firstAttribute="top" secondItem="aeh-bc-lpG" secondAttribute="top" constant="6" id="epa-RZ-F1l"/>
                                                 <constraint firstItem="csx-TG-oJT" firstAttribute="leading" secondItem="Odn-er-La0" secondAttribute="trailing" constant="8" id="kUb-2E-iSN"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="csx-TG-oJT" secondAttribute="trailing" id="p3e-t7-4rI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="csx-TG-oJT" secondAttribute="trailing" id="p3e-t7-4rI"/>
                                                 <constraint firstItem="Odn-er-La0" firstAttribute="top" secondItem="aeh-bc-lpG" secondAttribute="top" id="y8c-WY-onX"/>
+                                                <constraint firstItem="XQ8-3N-bw9" firstAttribute="leading" secondItem="Odn-er-La0" secondAttribute="trailing" constant="8" id="zDG-ck-dDg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

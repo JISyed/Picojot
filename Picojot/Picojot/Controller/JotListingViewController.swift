@@ -80,7 +80,7 @@ extension JotListingViewController: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 
     {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: JotCell.ID) as? JotCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: JotCell.ID) as? JotCell else {return JotCell()}
         
         let jot = global_tempJots[indexPath.row]
         

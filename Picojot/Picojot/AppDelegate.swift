@@ -18,9 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+        let notifSettings = UIUserNotificationSettings(types: [.alert], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(notifSettings)
+        UIApplication.shared.registerForRemoteNotifications()
         
         return true
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

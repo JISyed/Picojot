@@ -24,6 +24,9 @@ class JotCell: UITableViewCell
     {
         self._jot = jot
         
+        self.lblJotTagName.clipsToBounds = true
+        self.lblJotTagName.layer.cornerRadius = 3.0
+        
         // Search every tag for the ID provided by the jot
         for tag in global_tempTags
         {
@@ -31,7 +34,7 @@ class JotCell: UITableViewCell
             {
                 let tagColor = UIColor(red: CGFloat(tag.colorRed), green: CGFloat(tag.colorGreen), blue: CGFloat(tag.colorBlue), alpha: 1.0)
                 self._colorTag = tag
-                self.lblJotTagName.text = tag.name
+                self.lblJotTagName.text = " \(tag.name) "
                 self.lblJotTagName.backgroundColor = tagColor
                 self.viewJotColor.backgroundColor = tagColor
                 break;
@@ -40,7 +43,7 @@ class JotCell: UITableViewCell
         if _colorTag == nil
         {
             let blackColor = UIColor(white: 0.0, alpha: 1.0)
-            self.lblJotTagName.text = "No Tag"
+            self.lblJotTagName.text = " No Tag "
             self.lblJotTagName.backgroundColor = blackColor
             self.viewJotColor.backgroundColor = blackColor
         }
