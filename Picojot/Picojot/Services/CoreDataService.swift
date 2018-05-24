@@ -55,7 +55,7 @@ class CoreDataService
     
     
     /// Container for all CoreData objects that will be saved
-    static var context: NSManagedObjectContext
+    private static var context: NSManagedObjectContext
     {
         return persistentContainer.viewContext
     }

@@ -18,6 +18,8 @@
 		5107C1AC208E99C700662F75 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5107C1AB208E99C700662F75 /* CloudKit.framework */; };
 		511A6CDD208F467600EDED43 /* JotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A6CDC208F467600EDED43 /* JotCell.swift */; };
 		511A6CDF208F4F6100EDED43 /* CloudKitSchemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A6CDE208F4F6100EDED43 /* CloudKitSchemas.swift */; };
+		51B2F8AD209B46DE006DBEAC /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B2F8AC209B46DE006DBEAC /* CloudKitService.swift */; };
+		51B2F8AF209B4EC0006DBEAC /* JotEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B2F8AE209B4EC0006DBEAC /* JotEditingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5107C1AB208E99C700662F75 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		511A6CDC208F467600EDED43 /* JotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotCell.swift; sourceTree = "<group>"; };
 		511A6CDE208F4F6100EDED43 /* CloudKitSchemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSchemas.swift; sourceTree = "<group>"; };
+		51B2F8AC209B46DE006DBEAC /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		51B2F8AE209B4EC0006DBEAC /* JotEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JotEditingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5107C084207EF0F200662F75 /* JotListingViewController.swift */,
+				51B2F8AE209B4EC0006DBEAC /* JotEditingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				5107C0A9208007F300662F75 /* CoreDataService.swift */,
+				51B2F8AC209B46DE006DBEAC /* CloudKitService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -264,11 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5107C0AA208007F300662F75 /* CoreDataService.swift in Sources */,
+				51B2F8AF209B4EC0006DBEAC /* JotEditingViewController.swift in Sources */,
 				5107C08B207EF0F200662F75 /* Picojot.xcdatamodeld in Sources */,
 				5107C085207EF0F200662F75 /* JotListingViewController.swift in Sources */,
 				5107C083207EF0F200662F75 /* AppDelegate.swift in Sources */,
 				511A6CDD208F467600EDED43 /* JotCell.swift in Sources */,
 				511A6CDF208F4F6100EDED43 /* CloudKitSchemas.swift in Sources */,
+				51B2F8AD209B46DE006DBEAC /* CloudKitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
