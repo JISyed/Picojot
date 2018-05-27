@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+// Temp
+import CloudKit
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,15 +21,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let notifSettings = UIUserNotificationSettings(types: [.alert], categories: nil)
-        UIApplication.shared.registerUserNotificationSettings(notifSettings)
-        UIApplication.shared.registerForRemoteNotifications()
+        application.registerForRemoteNotifications()    // Needed for CloudKit subscriptions (silent notifs)
+        
+        // Set up subscription for CloudKit
+        let jotsSubscribed = UserDefaults.standard.bool(forKey: "bJotSubscribed")
+        if !jotsSubscribed
+        {
+            let jotSubscription = CKQuerySubscription(recordType: JotSchema.RecordName, predicate: NSPredicate(value: true), options: .firesOnRecordUpdate)
+            let notifInfo = CKNotificationInfo()
+            notifInfo.alertLocalizationKey = "JotNotif"
+            notifInfo.alertBody = "JotNotif"
+            jotSubscription.notificationInfo = notifInfo
+            let privateDB = CKContainer.default().privateCloudDatabase
+            privateDB.save(jotSubscription) { (subscription, error) in
+                if let err = error
+                {
+                    debugPrint(err)
+                    return
+                }
+                UserDefaults.standard.set(true, forKey: "bJotSubscribed")
+                UserDefaults.standard.synchronize()
+            }
+        }
+        
         
         return true
-    }
-    
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -53,7 +72,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         CoreDataService.saveContext()
     }
-
+    
+    // MARK: - For silent notifications
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        debugPrint("Successfully register to APN (Apple Pust Notif services)")
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        debugPrint(error)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        let notif = CKNotification(fromRemoteNotificationDictionary: userInfo)
+        //let alertBody = notif.alertBody
+        if notif.notificationType == .query
+        {
+            let qNotif = CKQueryNotification(fromRemoteNotificationDictionary: userInfo)
+            let recordID = qNotif.recordID!
+            CKContainer.default().privateCloudDatabase.fetch(withRecordID: recordID) { (record, error) in
+                if let err = error
+                {
+                    print("Sync error: Couldn't retrieve updated record!")
+                    debugPrint(err)
+                    return
+                }
+                guard let newRecord = record else {
+                    print("Sync error: Updated record is nil!")
+                    return
+                }
+                // TODO: Add record
+            }
+        }
+    }
 
 }
 

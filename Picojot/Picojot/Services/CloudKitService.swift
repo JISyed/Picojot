@@ -18,9 +18,16 @@ class CloudKitService
     }
     
     private let privateDB = CKContainer.default().privateCloudDatabase
+    private let _jots : [TempJot] = []
     
     
-    
+    static var jots : [TempJot] 
+    {
+        get
+        {
+            return inst._jots
+        }
+    }
     
     static func makeNewJot(withTitle title: String, andBody body: String)
     {
@@ -49,12 +56,31 @@ class CloudKitService
         }
     }
     
+    static func loadAllJots()
+    {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: JotSchema.RecordName, predicate: predicate)
+        inst.privateDB.perform(query, inZoneWith: nil) { (records, error) in
+            if let err = error
+            {
+                print("Jots could not be fetched from iCloud!")
+                debugPrint(err)
+                return
+            }
+            guard let allRecords = records else {
+                print("Jots records are nil!")
+                return
+            }
+            
+            
+        }
+    }
     
     static func setupSubscription()
     {
-        let predicate = NSPredicate(value: true)
-        let subscription = CKSubscription(recordType: JotSchema.RecordName, predicate: predicate, options: CKSubscriptionOptions.firesOnRecordCreation)
-        let notifInfo = CKNotificationInfo()
+        
     }
+    
+    
     
 }
